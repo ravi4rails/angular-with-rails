@@ -1,0 +1,107 @@
+<!-- <div class="container u-form mb-4 mt-4">
+  <div class="col-md-6 offset-md-3">
+    <div class="card">
+      <div class="card-body">
+        <form (ngSubmit)="onSubmitUser(user); userForm.reset();" #userForm='ngForm' >
+          <div class="form-group">
+            <label for="First name">First name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter First Name"
+              name="name"
+              required
+              #name="ngModel"
+              [(ngModel)]="user.first_name">
+              <span class="error-message" *ngIf="!first_name.valid && first_name.touched" >Please enter a valid name.</span>
+          </div>
+          <div class="form-group">
+            <label for="Last name">Last name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter last Name"
+              name="name"
+              required
+              #name="ngModel"
+              [(ngModel)]="user.last_name">
+              <span class="error-message" *ngIf="!last_name.valid && last_name.touched" >Please enter a valid last name.</span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+              name="email"
+              required
+              email
+              #email="ngModel"
+              [(ngModel)]="user.email">
+              <span class="error-message" *ngIf="!email.valid && email.touched">Please enter a valid email address.</span>
+          </div>
+          <div class="form-group">
+            <label for="contact">Contact</label>
+            <input
+              type="text"
+              class="form-control"
+              id="contact_number"
+              placeholder="Enter Contact Number"
+              name="contact"
+              required
+              #contact_number="ngModel"
+              [(ngModel)]="user.contact">
+              <span class="error-message" *ngIf="!contact.valid && contact.touched">Please enter a valid contact number.</span>
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input
+              type="text"
+              class="form-control"
+              id="city"
+              placeholder="Enter City"
+              name="city"
+              required
+              #address="ngModel"
+              [(ngModel)]="user.city">
+              <span class="error-message" *ngIf="!city.valid && city.touched">Please enter a valid address.</span>
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input
+              type="text"
+              class="form-control"
+              id="state"
+              placeholder="Enter state"
+              name="state"
+              required
+              #gender="ngModel"
+              [(ngModel)]="user.state">
+              <span class="error-message" *ngIf="!state.valid && state.touched">Please provide your state.</span>
+          </div>
+          <div class="form-group">
+            <label for="state">Country</label>
+            <input
+              type="text"
+              class="form-control"
+              id="country"
+              placeholder="Enter country"
+              name="country"
+              required
+              #gender="ngModel"
+              [(ngModel)]="user.country">
+              <span class="error-message" *ngIf="!country.valid && country.touched">Please provide your country.</span>
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary btn-app"
+            [disabled]="!userForm.valid">Save User</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+ -->
