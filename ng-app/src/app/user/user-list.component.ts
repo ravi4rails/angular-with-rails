@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
+import { Router, ActivatedRoute, Params} from '@angular/router';
 import { User } from './user';
 import { UserService } from './user.service';
 @Component({
@@ -8,12 +9,16 @@ import { UserService } from './user.service';
   styleUrls: ['./user.component.css']
 })
 export class UserListComponent implements OnInit {
-  users: User[];
-  constructor( private userService: UserService ) { }
+  private users: User[];
+  errorMessage: any;
+  constructor(
+    private userService: UserService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit() {
-    // let timer = Observable.timer(0,5000);
-    // timer.subscribe(() => this.getUsers());
+    this.getUsers();
   }
   
   getUsers() {
