@@ -5,7 +5,7 @@ import { UserListComponent } from './user/user-list.component';
 import { HomepageComponent } from './homepage/homepage.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/users', pathMatch: 'full' },
   { path: 'home', component: HomepageComponent },
   { path: 'users', component: UserListComponent }
 ]
