@@ -25,4 +25,9 @@ export class UserListComponent implements OnInit {
     this.userService.getUsers() 
       .subscribe(users => this.users = users);
   }
+  
+  showUser(user: User): void {
+    let userLink = ['/users', user.id];
+    this.router.navigate(userLink);
+  }
 }
