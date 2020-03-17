@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="mb-4 mt-4">
+    <a class="btn btn-primary btn-app" routerLink="/users">Back</a>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">{{ user.first_name }}</h4>
+          <h4 class="card-title">{{ user.last_name }}</h4>
+          <h5 class="card-title">{{ user.email }}</h5>
+          <h5 class="card-title">{{ user.contact }}</h5>
+          <h5 class="card-title">{{ user.city }}</h5>
+          <h5 class="card-title">{{ user.state }}</h5>
+          <h5 class="card-title">{{ user.country }}</h5>
+          <button class="btn btn-danger btn-app" (click)="delete(user)">Delete</button>
+          <button class="btn btn-warning btn-app ml-3" (click)="update(user)">Edit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="margin-top:50px;"></div>
